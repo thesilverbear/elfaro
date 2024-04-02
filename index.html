@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diario el Faro</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h2 {
+            margin-left: 50px;
+            text-decoration: underline;
+        }
+
+        h3 {
+            margin-top: -10px;
+        }
+
+        nav {
+            margin-left: 50px;
+        }
+
+        .titulo {
+            display: grid;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            border-radius: 70%;
+            height: 70px;
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+
+        .contenedor-padre {
+            display: flex;
+        }
+
+        .contenedor-padre>div {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 0 10px;
+            justify-content: flex-end;
+            flex: 1;
+            margin-bottom: 70px;
+            padding: 20px;
+        }
+
+        .img-container {
+            margin-top: auto;
+            align-items: center;
+            justify-items: center;
+
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 250px;
+            justify-self: flex-end;
+        }
+
+        .video {
+            justify-self: flex-end;
+        }
+
+
+        .categoria {
+            margin-top: -10px;
+            text-align: center;
+            color: darkblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .audio-element {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 800px) {
+            .contenedor-padre {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                gap: 30px;
+                margin-top: 8vh;
+            }
+
+            .titulo {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            .title-logo {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="titulo">
+        <header>
+            <h1 class="title-logo"><img class="logo" src="logoelfaro.png" /> Periódico El Faro</h1>
+        </header>
+    </div>
+    <!-- navbar/menu -->
+    <nav>
+        <li><a href="#general">Inicio</a></li>
+        <li><a href="#deportes">Deportes</a></li>
+        <li><a href="#negocios">Negocios</a></li>
+    </nav>
+    <br />
+    <!-- noticias generales -->
+    <h2>Noticias Generales</h2>
+    <div class="contenedor-padre">
+        <div>
+            <h3>Encuentran cadáver de un hombre a un costado de la Ruta 5 en Paine: Estaba maniatado y presenta
+                múltiples disparos</h3>
+            <p class="categoria">SEGURIDAD</p>
+            <p>A un costado de la Ruta 5 Sur, en la comuna de Paine, fue encontrado este sábado el cadáver de un hombre,
+                hecho que está
+                siendo investigado por el Ministerio Público y la Policía de Investigaciones (PDI).
+
+                De acuerdo a antecedentes preliminares, el cuerpo se encontraba maniatado al momento de ser descubierto
+                y presentaba
+                múltiples impactos de bala.</p>
+            <div class="img-container">
+                <img src="fiscalia.jpg" alt="fiscalia pdi">
+            </div>
+        </div>
+
+        <div>
+            <h3>Grúa inicia los trabajos para retirar los restos del puente de Baltimore</h3>
+            <p class="categoria">GLOBAL</p>
+            <p>Este viernes comenzaron las operaciones que permitirían acceder al lugar donde podrían estar los
+                trabajadores atrapados
+                en un vehículo bajo toneladas de concreto y acero</p>
+            <div class="img-container">
+                <iframe width="100%" height="250px" src="https://youtube.com/embed/cZA3_-fWlVk"></iframe>
+            </div>
+        </div>
+
+        <div>
+            <h3>Joven es apuñalado durante evento en Las Condes y queda en riesgo vital</h3>
+            <p class="categoria">SEGURIDAD</p>
+            <p>El hecho ocurrió pasada las 01:00 horas de este jueves en la Terraza Mirador, ubicada en un camino
+                paralelo al Parque
+                Natural La Plaza Sur, donde cerca de 200 personas asistieron a una fiesta organizada por el Colegio La
+                Maisonnette.
+            </p>
+            <div class="img-container">
+                <audio class="audio-element" controls>
+                    <source src="apunalado.mp3" type="audio/mpeg">
+                    Tu navegador no soporta este formato de audio.
+                </audio>
+                <img src="lascondes.jpeg" alt="corredor">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- noticias deportivas  -->
+    <h2>Noticias Deportivas</h2>
+    <div class="contenedor-padre">
+        <div>
+            <h3>Colo Colo escala a puestos de avanzada: Así está la tabla de posiciones del Campeonato Nacional</h3>
+            <p class="categoria">NACIONAL</p>
+            <p>Se sigue jugando la sexta fecha del Campeonato Nacional. Este sábado, Colo Colo le ganó 4-1 a Everton.
+                Con la victoria, el "Cacique" subió al cuarto lugar de la tabla de posiciones con 10 puntos, a seis del
+                líder Iquique.</p>
+            <div class="img-container">
+                <img src="tablaposicion.jpg" alt="tabla posicion">
+            </div>
+        </div>
+
+        <div>
+            <h3>Alexis Sánchez recibe durísimo dardo tras su visita a Marsella por el duelo de Chile ante Francia</h3>
+            <p class="categoria">FÚTBOL</p>
+            <p>Jean-Michel Larqué, ex seleccionado francés, destruyó a Alexis recordando su salida de los "focenses".
+
+                "Sánchez es un buen jugador que prefirió estar en la banca del Inter de Milán que ser titular en el
+                Olympique de
+                Marsella. Estuvo un año en Marsella y después les dio la espalda", lanzó en su rol de comentarista.</p>
+            <div class="img-container">
+                <img src="alexis.jpg">
+            </div>
+        </div>
+
+        <div>
+            <h3>Más de 150 países corriendo al mismo tiempo: Así es "la carrera benéfica más grande del mundo"</h3>
+            <p class="categoria">MUNDO</p>
+            <p>¿Qué es Wings For Life World Run? Esta famosa corrida, que se realiza desde 2014, no es como todas. A
+                diferencia de una
+                carrera normal, la meta no es fija, sino que te va alcanzando a medida que vas avanzando. El 100% de las
+                inscripciones de Wings For Life World Run van destinadas a la búsqueda de la cura de las lesiones de
+                médula espinal, apoyando más de 250 proyectos de investigación que cada año muestran prometedores
+                avances.
+            </p>
+            <div class="img-container">
+                <img src="corrida.jpg" alt="corredor">
+            </div>
+        </div>
+    </div>
+
+    <!-- Economía y Finanzas  -->
+    <h2>Economía y Finanzas</h2>
+    <div class="contenedor-padre">
+        <div>
+            <h3>Economía chilena crece con fuerza 4,5% en febrero: Es su mejor registro mensual desde mayo de 2022</h3>
+            <p class="categoria">ECONOMÍA</p>
+            <p>La economía chilena creció con fuerza 4,5% en febrero de 2024, según el Indicador Mensual de Actividad
+                Económica
+                (Imacec) publicado esta mañana por el Banco Central.
+
+                Se trata del mejor registro desde mayo de 2022, cuando el Imacec anotó un crecimiento de 5,1%. Febrero
+                de 2024 registró
+                un día más que febrero de 2023, como consecuencia del año bisiesto .</p>
+            <div class="img-container">
+                <img src="bancocentral.jpg" alt="tabla posicion">
+            </div>
+        </div>
+
+        <div>
+            <h3>“Casi no me queda lugar en el auto”: Ciudadanos argentinos viajan hasta supermercados chilenos para
+                comprar atún</h3>
+            <p class="categoria">ECONOMÍA - ALIMENTOS</p>
+            <p>Durante el reciente fin de semana largo, diversos argentinos cruzaron el paso Los Libertadores para
+                llegar hasta suelo
+                chileno y comprar productos de alimentos, debido al alza del costo de la vida e incremento de precios en
+                la canasta
+                básica. <BR>
+                En ese contexto, durante el reciente fin de semana largo, ciudadanos argentinos arribaron hasta los
+                locales comerciales
+                nacionales para comprar productos alimenticios, especialmente latas de atún, ya que tenía un costo de
+                1.300 pesos,
+                siendo un tercio de lo que pagarían actualmente en Argentina.</p>
+            <div class="img-container">
+                <img src="atun.jpg">
+            </div>
+        </div>
+
+        <div>
+            <h3>Codelco anota caídas de 8,4% en su producción de 2023 y de 38% en aporte fiscal</h3>
+            <p class="categoria">ECONOMÍA - CODELCO</p>
+            <p>El directorio de la cuprífera se reunió más de cinco horas, donde se informó que los aportes a las arcas
+                públicas
+                llegaron a US$ 1.426 millones en 2023, es decir, una caída del 38% respecto a los recursos aportados en
+                2022. “Fue un
+                año muy difícil en términos de operación y producción, pero estamos convencidos de que fue la parte más
+                profunda de un
+                valle productivo que desde este año comenzará a mejorar, señaló el presidente ejecutivo de Codelco,
+                Rubén Alvarado.
+            </p>
+            <div class="img-container">
+                <img src="Codelco.jpg" alt="corredor">
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+        © Periódico El Faro
+    </footer>
+
+</body>
+
+</html>
